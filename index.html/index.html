@@ -3,11 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Tutorías</title>
+    <link rel ="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <p> hola</p>
-    
+     <!-- Encabezado -->
+    <header>
+        <h1>Centro de Tutorías</h1>
+        <nav id="menu-principal">
+            <a href="#servicios">Servicios</a>
+            <a href="#horario">Horario</a>
+            <a href="#tutores">Tutores</a>
+            <a href="#cita">Cita</a>
+        </nav>
+    </header>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <p class="destacado">Ofrecemos apoyo académico personalizado para ayudarte a alcanzar el éxito en tus estudios.</p>
+        <ul class="lista-servicios">
+            <li>Tutorías de Matemáticas</li>
+            <li>Asesoría de Física</li>
+            <li>Apoyo en Química</li>
+            <li>Clases de Redacción y Ortografía</li>
+            <li>Práctica de Inglés y Conversación</li>
+        </ul>
+    </section>
+
+    <!-- Horario -->
+    <section id="horario">
+        <h2>Horario de Tutorías</h2>
+        <table class="tabla-horario">
+            <thead>
+                <tr>
+                    <th>Materia</th>
+                    <th>Día</th>
+                    <th>Hora</th>
+                    <th>Lugar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Matemáticas</td>
+                    <td>Lunes</td>
+                    <td>10:00 AM</td>
+                    <td>Aula 101</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td>Martes</td>
+                    <td>11:00 AM</td>
+                    <td>Laboratorio 2</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td>Miércoles</td>
+                    <td>01:00 PM</td>
+                    <td>Laboratorio 3</td>
+                </tr>
+                <tr>
+                    <td>Español</td>
+                    <td>Jueves</td>
+                    <td>02:00 PM</td>
+                    <td>Biblioteca</td>
+                </tr>
+                <tr>
+                    <td>Inglés</td>
+                    <td>Viernes</td>
+                    <td>09:00 AM</td>
+                    <td>Aula 105</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Tutores -->
+    <section id="tutores">
+        <h2>Nuestros Tutores:</h2>
+        
+        <article class="tarjeta">
+            <h3>Juan Pérez</h3>
+            <p>Matemáticas y Física</p>
+            <p>Ingeniero civil con más de 5 años de experiencia enseñando ciencias exactas.</p>
+        </article>
+
+        <article class="tarjeta">
+            <h3>María Gómez</h3>
+            <p>Química y Biología</p>
+            <p>Especialista en ciencias naturales enfocada en métodos de estudio dinámicos.</p>
+        </article>
+
+        <article class="tarjeta">
+            <h3>Carlos Ruiz</h3>
+            <p>Inglés y Literatura</p>
+            <p>Traductor profesional y apasionado por la enseñanza de idiomas y redacción.</p>
+        </article>
+    </section>
+
+    <!-- Aviso y sección de Cita -->
+    <section id="cita">
+        <h2>Para solicitar su cita</h2>
+        <p id="aviso-principal" class="aviso">Las citas deben solicitarse con 2 días de anticipación.</p>
+    </section>
+
+     <!-- Sección: Solicitar cita -->
+    <section id="cita">
+        <h2>Formulario de Solicitud de cita</h2>
+
+        <form>
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+
+            <p>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </p>
+
+            <p>Modalidad de la cita:</p>
+
+            <p>
+                <input type="radio" id="presencial"
+                       name="modalidad" value="presencial">
+                <label for="presencial">Presencial</label>
+            </p>
+
+            <p>
+                <input type="radio" id="virtual"
+                       name="modalidad" value="virtual">
+                <label for="virtual">Virtual</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="recordatorio"
+                       name="recordatorio">
+                <label for="recordatorio">
+                    Deseo recibir un recordatorio
+                </label>
+            </p>
+
+            <p>
+                <label for="comentarios">Comentarios:</label>
+            </p>
+
+            <textarea id="comentarios" name="comentarios"
+                      rows="4" cols="40"></textarea>    
+
+            <p>
+                <button type="submit" class="boton">
+                    Solicitar cita
+                </button>
+            </p>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Gracias por visitar nuestra página web.</p>
+
+        <p>
+            <a href="https://developer.mozilla.org/es/">
+                Visitar MDN Web Docs
+            </a>
+        </p>
+    </footer>
+
+
 </body>
 </html>
