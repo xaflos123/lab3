@@ -1,39 +1,104 @@
-/* leccion 1 atributos */
+/* Selector 1: body */
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 20px;
+}
+
+/* Selector 2: h1, h2, h3 */
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    color: #1B4F72;
+}
+
+/* Selector 3: #menu-principal */
+#menu-principal {
+    background-color: #1B4F72;
+    padding: 15px;
+}
+
+/* 4. Selector de clase: cada tarjeta de tutor */
+.tarjeta {
+    border: 1px solid #cccccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* 5. Descendiente: enlaces dentro del menú */
+#menu-principal a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* 6. Hijo directo: los li que son hijos de la lista de servicios */
+.lista-servicios > li {
+    list-style: none;
+    padding: 8px 0 8px 4px;
+}
+
+/* 7. Hermano adyacente: el párrafo que viene justo después de un h2 */
+h2 + p {
+    font-style: italic;
+}
+
+/* 8. Hermano general: todos los párrafos que vienen después de un h3 */
+h3 ~ p {
+    color: #666666;
+}
+/* 9.leccion 1 atributos */
 
 input[type="email"] {
         border: 2px solid #3498db;
 }
-
+/* 10.leccion 1 atributos */
 [required] {
     border-left: 5px solid #e74c3c;
 }
 
-/* leccion 2 pseudo clases  */
+/* 11.leccion 2 pseudo clases  */
 
 #menu-principal a:hover {
     color: #ff5733;
 }
-
+/* 12.leccion 2 pseudo clases  */
 input:focus, textarea:ficus {
     outline: 2px solid #2ecc71;
 }
-
+/* 13.leccion 2 pseudo clases  */
 .tabla-horario tbody tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* leccion 2 elementos */
+/*selector 14 lista de servicios first child*/
+.lista-servicios> li:first-child {
+    font-weight: bold; 
+}
+
+/* Selector 15: input:checked + label */
+input:checked + label {
+    font-weight: bold;
+    color: #1B4F72;
+}
+
+/* 16. ::first-letter: letra capital del párrafo destacado */
+.destacado::first-letter {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #A23B72;
+}
+/* 17.leccion 2 elementos */
 
 .lista-servicios > li::before {
     content: "\2713 ";
 }
 
-/* experimento 1  */
-
-#aviso-principal { 
-    color: red;
+/* Selector 18: a[href^="https"]::after */
+a[href^="https"]::after {
+    content: " \2197";
 }
 
-.aviso {
-    color: orange;
+/* 19. ::selection: color del texto resaltado con el mouse */
+::selection {
+    background-color: #FFE08A;
 }
