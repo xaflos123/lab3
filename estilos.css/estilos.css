@@ -1,0 +1,39 @@
+/* leccion 1 atributos */
+
+input[type="email"] {
+        border: 2px solid #3498db;
+}
+
+[required] {
+    border-left: 5px solid #e74c3c;
+}
+
+/* leccion 2 pseudo clases  */
+
+#menu-principal a:hover {
+    color: #ff5733;
+}
+
+input:focus, textarea:ficus {
+    outline: 2px solid #2ecc71;
+}
+
+.tabla-horario tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* leccion 2 elementos */
+
+.lista-servicios > li::before {
+    content: "\2713 ";
+}
+
+/* experimento 1  */
+
+#aviso-principal { 
+    color: red;
+}
+
+.aviso {
+    color: orange;
+}
