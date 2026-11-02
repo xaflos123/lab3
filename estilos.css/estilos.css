@@ -102,3 +102,8 @@ a[href^="https"]::after {
 ::selection {
     background-color: #FFE08A;
 }
+/* experimento 1  */
+
+#aviso-principal {
+    color: orange;
+}
